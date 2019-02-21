@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/slide_image"
+        android:layout_width="173dp"
+        android:layout_height="147dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        app:srcCompat="@drawable/eat_icon" />
+
+    <TextView
+        android:id="@+id/slide_head"
+        android:layout_width="143dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="228dp"
+        android:text="FERHAT CELIK"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/slide_desc"
+        android:layout_width="246dp"
+        android:layout_height="107dp"
+        android:layout_below="@+id/slide_head"
+        android:layout_centerHorizontal="true"
+        android:text='"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."'
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

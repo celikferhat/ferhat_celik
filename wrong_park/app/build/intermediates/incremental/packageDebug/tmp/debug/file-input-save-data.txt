@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Tue Jul 03 22:04:37 EET 2018
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\fr\\Desktop\\wrong_park\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/proje_arkaplan">
+
+    <TextView
+        android:id="@+id/isim_yemek"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="          REVANİ"
+        android:textColor="@android:color/black"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:layout_width="354dp"
+        android:layout_height="260dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="211dp"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rastgele_yemek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="\nMALZEMELER\n3 adet yumurta\n1 çay bardağı toz şeker\n1,5 su bardağı un\n1 su bardağı irmik\n1 çay bardağı ayçiçek yağı\n1 çay bardağı yoğurt\n1 paket kabartma tozu\n1 paket vanilya\nŞerbeti için:3 su bardağı toz şeker\n3 su bardağı su\n1/2 adet limon suyu\nServisi için:2 yemek kaşığı\nrendelenmiş hindistan cevizi\n\n HAZIRLANIŞ \n Tatlının şerbetini hazırlamak için: toz şeker ve suyu bir tencereye aktarın. Kısık ateşte yaklaşık 30 dakika kadar kaynattıktan sonra limon suyunu ekleyin ve ılınması için ocaktan alın.Yumurta ve toz şekeri bir mikser yardımıyla toz şeker tamamen eriyene kadar karıştırın.Sırasıyla ayçiçek yağını, yoğurdu, vanilyayı, irmiği, elenmiş unu ve kabartma tozunu ekledikten sonra çırpma işlemini sürdürün.Fırın kabını tereyağı ile yağlayın. Revaniyi, önceden ısıtılmış 180 derece fırında 25-30 dakika kadar pişirin. İçini çeken tatlıyı dikdörtgen ya da baklava dilimi şeklinde kesin.Dilimlediğiniz ılık tatlıya önceden hazırladığınız soğuk şerbeti azar azar ilave ederek, tatlının içine çekmesini sağlayın.Rendelenmiş Hindistan cevizi ve arzuya göre fındık içi ile süsleyerek servis edin."
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="23dp"
+        android:onClick="yemegiGecmiseEkle"
+        android:layout_marginEnd="25dp"
+        android:text="TAMAM" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="83dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/isim_yemek"
+        android:layout_alignTop="@+id/button"
+        android:background="@drawable/carpi"
+        android:onClick="yemegiKaralisteyeEkle"
+        tools:layout_height="50dp"
+        tools:layout_width="50dp" />
+
+    <Button
+        android:id="@+id/button_fav"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:onClick="yemegiFavorilereEkle"
+        android:layout_marginEnd="175dp"
+        android:background="@drawable/kalpp" />
+
+    <ImageView
+        android:id="@+id/imag_yemek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:src="@drawable/revani" />
+
+</RelativeLayout>

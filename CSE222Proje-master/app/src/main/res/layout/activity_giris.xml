@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aaa"
+    tools:context=".LoginActivity"
+    tools:layout_editor_absoluteY="73dp"><![CDATA[
+
+
+
+                android:background="@color/none"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="151dp">
+
+
+    ]]>
+
+    <EditText
+        android:id="@+id/edit_sifre"
+        android:layout_width="278dp"
+        android:layout_height="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="253dp"
+        android:background="#90000000"
+        android:drawableLeft="@drawable/beyaz_parola"
+        android:ems="10"
+        android:hint="@string/sifre"
+        android:inputType="textPersonName|textPassword"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_kullaniciadi"
+        android:layout_width="278dp"
+        android:layout_height="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="217dp"
+        android:background="#90000000"
+
+        android:drawableLeft="@drawable/beyaz_person"
+        android:ems="10"
+        android:hint="E-posta"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button_giris_yap"
+        android:layout_width="183dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="231dp"
+        android:background="@drawable/shape"
+        android:text="GİRİŞ"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:layout_width="wrap_content" />
+
+
+    <Button
+        android:id="@+id/button_misafir"
+        android:layout_width="283dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:background="@drawable/shape"
+        android:onClick="onLoginButtonClick"
+        android:padding="3dp"
+        android:text="@string/misafir"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteY="418dp"
+
+
+        />
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/button_kayit_ol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:onClick="onRegisterButtonClick"
+        android:text="@string/kayit_ol"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape2" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="214dp"
+        android:layout_height="154dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/yemek2" />
+
+
+</RelativeLayout>

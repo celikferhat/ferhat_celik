@@ -1,0 +1,4 @@
+#Tue Jul 03 22:04:37 EET 2018
+base.0=C\:\\Users\\fr\\Desktop\\wrong_park\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

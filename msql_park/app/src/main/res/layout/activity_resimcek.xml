@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resimcek">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/resim"/>
+
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp"
+        android:layout_marginStart="56dp"
+        android:background="#f62b2b"
+        android:onClick="resimcek_cek"
+        android:text="Kamerayı aç"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button7"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/holo_green_light"
+        android:text="TAMAMLA"
+        android:onClick="tamamla"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1019827152548",
+    "firebase_url": "https://ibb-deneme.firebaseio.com",
+    "project_id": "ibb-deneme",
+    "storage_bucket": "ibb-deneme.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019827152548:android:965110a9f2e288f6",
+        "android_client_info": {
+          "package_name": "com.example.firat.wrong_park"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019827152548-6k633l47r93lhaieni3r8s9p8bc3g1a5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firat.wrong_park",
+            "certificate_hash": "25966452890c7d9f6acbdcd931461d5d7102dd37"
+          }
+        },
+        {
+          "client_id": "1019827152548-01ffgj43c92b45b260er8rmur6uplvdi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firat.wrong_park",
+            "certificate_hash": "a3948e8dd6aaf094a172a490ad17859dc7b51b82"
+          }
+        },
+        {
+          "client_id": "1019827152548-4f4i3hmhirh8t0ssfc796g5lkn6he9gh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3Lztt4JiJozrzaN73PPTbYU68J-qe7PA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019827152548-4f4i3hmhirh8t0ssfc796g5lkn6he9gh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

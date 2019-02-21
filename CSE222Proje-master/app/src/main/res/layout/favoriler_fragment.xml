@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Favoriler">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/text_button"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/my_button_bg"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="@string/button"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/close_button"
+        android:layout_width="34dp"
+        android:layout_height="32dp"
+        android:background="@drawable/cross"
+        android:layout_marginStart="10dp"
+        />
+
+</FrameLayout>

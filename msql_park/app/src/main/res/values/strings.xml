@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">msql_park</string>
+    <string name="title_activity_remain_time">remain_time</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/proje_arkaplan">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Bugünün Önerisi"
+        android:textColor="@android:color/black"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="148dp"
+        android:layout_height="122dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
+        android:layout_width="354dp"
+        android:layout_height="260dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="218dp"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/so_an_k_p_k_p_k_k_kesip_ya_m_zda_pembele_inceye_kadar_kavuruyoruz_ard_ndan_i_f_st_m_z_ekleyip_onuda_kavuruyoruz_y_kad_m_z_pirin_leri_harca_ekleyip_tekrardan_kavuruyoruz_pirin_lerle_ayn_boyuta_gelecek_kadar_s_cak_suyumuzu_koyup_tuzumuzu_karabiberimizi_ve_ku_z_m_n_koyup_k_s_k_ate_te_kapa_n_kapat_p_suyunu_ekene_kadar_pi_iriyoruz_pi_en_pirin_lere_nane_ve_maydanozu_ekliyoruz_maydanozlar_ince_ince_kesilecek_ard_ndan_nceden_ha_lad_m_z_z_m_yapraklar_na_harc_koyup_tek_tek_sar_p_tenceremize_diziyoruz_ben_dizmeden_nce_tencerenin_dibini_z_m_yapra_yla_kapl_y_p_yle_dizmeye_ba_l_yorum_har_bitene_kadar_sarma_i_lemine_devam_ediyoruz_sarmalar_m_z_k_s_k_ate_e_koymadan_nce_bir_su_barda_kaynam_su_ve_yar_m_su_barda_zeytin_ya_m_z_ekleyip_pi_iriyoruz_ben_tencerenin_dibine_serdi_im_yapraklardan_dizme_i_lemi_bittikten_sonrada_st_n_kapatacak_ekilde_seriyorum_pi_en_dolmam_z_10_dakika_kapa_kapal_tencerede_dinlendirip_servise_haz_r_ediyoruz_afiyetler_olsun"
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/tamam" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginStart="58dp"
+        android:background="@drawable/carpi"
+        tools:layout_height="50dp"
+        tools:layout_width="50dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="52dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/kalpp" />
+
+</RelativeLayout>

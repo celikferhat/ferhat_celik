@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_item"
+        android:icon="@mipmap/favoriler_menuicon"
+        android:title="@string/favoriler"
+        android:onClick="menudenFavorilere"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/nav_item2"
+        android:icon="@mipmap/karaliste_menuicon"
+        android:title="@string/karaliste"
+        android:onClick="menudenKaralisteye"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/nav_item3"
+        android:icon="@mipmap/ic_launcher_round"
+        android:title="@string/tarif_ekle"
+        android:onClick="menudenTarifEklemeye"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/nav_item4"
+        android:icon="@mipmap/gecmis_menuicon"
+        android:title="@string/gecmis"
+        android:onClick="menudenGecmise"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/nav_item5"
+        android:icon="@drawable/blank_avatar"
+        android:title="@string/bilgilerim"
+        android:onClick="menudenKullaniciBilgilerine"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/nav_item6"
+        android:icon="@drawable/blank_avatar"
+        android:title="Çıkış"
+        android:onClick="menudenCikisa"
+        app:showAsAction="never"/>
+</menu>
