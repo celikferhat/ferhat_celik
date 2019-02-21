@@ -1,0 +1,147 @@
+void writePeople(People people, char* filetmp1) 
+{
+    FILE *ptr;
+    int i;
+
+    
+    ptr = fopen(filetmp1, "wb");/*open binary file write mode*/
+
+   
+    if (ptr == NULL)/*if file can't open return*/
+        return;
+
+    
+    for (i = 0; i < people.size; ++i)/*write people->data struct to binary file respectively*/
+       fwrite(&people.data[i], sizeof(Person), 1, ptr);
+
+    
+    fclose(ptr);/*close file*/
+}
+
+
+void readPeople(People *people, char* filetmp1) 
+{
+    FILE *ptr;
+
+   
+    ptr = fopen(filetmp1, "rb");/*open binary file with read mode*/
+
+    
+    people->size = 0;/*we must increase one by one struct size so first size zero*/
+
+   
+    if (ptr == NULL)/*if file can't open return*/
+        return;
+
+    while (fread(&people->data[people->size], sizeof(Person), 1, ptr) > 0)
+        people->size++;/*read from binary file respectively */
+
+    
+    fclose(ptr);/*close file*/
+}
+
+
+void imputation(People *people)
+{
+    int tmp = 0, numval = 0, i;  
+    double exp = 0;
+    Record *head;    
+    
+    for (i = 0; i < people->size; ++i) /*we have to look at all the structs and if expenditure is -1 we must calculate it*/
+	{
+        if (people->data[i].expenditure != -1) 
+		{
+            exp += people->data[i].expenditure;/**/
+            for (head = people->data[i].numbers; head != NULL; head = head->next)/*we must find number of expenditure so we look until NULL and increase tmp*/
+                tmp += 1;
+        }
+    }
+
+    
+    for (i = 0; i < people->size; ++i)
+	{
+        if (people->data[i].expenditure == -1) 
+		{
+            for (head = people->data[i].numbers; head != NULL; head = head->next)/*we need to find the number of the phone number of the uncalculated one*/
+                numval += 1;
+        
+			people->data[i].expenditure = (exp / tmp) * numval;/*find unknown expenditure*/
+        }
+    }
+}
+
+
+
+
+void read(char* filetmp1, People *people) 
+{
+    FILE *ptr;
+    int gnm,a = 0;       
+    char *tmp1, *tmp2;
+	 Record *head, *temp;/*we create record pointer head and temp*/
+		char dskn;
+    
+    tmp1 = (char *)calloc(NAMELEN, sizeof (char));/*we create location for tmp1 and tmp2 to heap*/
+    tmp2 = (char *)calloc(NAMELEN, sizeof (char));
+
+    
+    ptr = fopen(filetmp1, "rt");/*open txt file for read mode*/
+
+    
+    if (ptr == NULL)
+        return;
+
+    while (a == 0) /*we need to read it until the end of the page*/
+	{
+        
+        gnm = fscanf(ptr, "%d%s%s%lf", &people->data[people->size].id, tmp1,tmp2, &people->data[people->size].expenditure);/*we take id name and expenditure without loop we must hide head pointer*/
+						
+						
+						
+
+        if (gnm != EOF)/*if we aren't end of page ,contunie*/
+		{
+            
+            sprintf(people->data[people->size].name, "%s %s", tmp1, tmp2);/*print name surname*/
+            
+			head = (Record *)malloc(sizeof (Record));/*take memory from heap for head pointer*/
+
+    
+			temp = head;/*We assigned the address of head pointer to the variable temp.*/
+
+    
+			temp->id = people->data[people->size].id;/*write id*/
+			
+			fscanf(ptr, "%s", temp->number);/*We made the first assignment manually so that the address does not get lost.*/
+
+    
+			for (dskn = getc(ptr); dskn != '\n'; dskn = getc(ptr)) 
+			{
+				temp->next = (Record *)malloc(sizeof (Record));/*We made assignments  until the numbers were done.*/
+				
+				temp->next->id = people->data[people->size].id;
+				
+				fscanf(ptr, "%s",tmp1);
+				strcpy(temp->next->number,tmp1);/*copy numbers from temp to number*/
+				
+				temp = temp->next;/*We assigned the next value to the variable temp.*/
+				
+			}
+			temp->next = NULL;/*We assigned the null to the variable temp->next.*/
+			
+			
+            
+           people->data[people->size].numbers = head;/*We have given the address back.*/
+
+		   people->size += 1;/*increase number of person*/
+			
+        }
+		else 
+		{
+            a = 1; 
+        }
+    }
+    free(tmp1);    
+    free(tmp2);  /*free locations*/
+    fclose(ptr);   
+}

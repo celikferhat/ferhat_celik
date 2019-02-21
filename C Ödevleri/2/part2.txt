@@ -1,0 +1,139 @@
+#include <stdio.h>
+/*We created a rectangle using nested.*/
+void drawRectangle (int width,int height,int startingPoint,int printLastLine)
+{
+	int a,b,c,d,e,f,h;
+	a=0;
+	b=0;
+	c=0;
+	d=0;
+	e=2;
+	f=0;
+	h=0;
+	while(a<startingPoint)
+	{
+		printf(" ");
+		a++;
+	}	
+	while(b<width)
+	{
+		printf("*");
+		b++;
+	}
+	printf("\n");
+	while(c<height)
+	{
+		while(d<startingPoint)
+		{
+		printf(" ");
+		d++;
+		}
+		d=0;
+		printf("*");
+		while(e<width)
+		{
+			printf(" ");
+			e++;
+		}
+		e=2;
+		printf("*\n");
+		c++;	
+	}
+	
+	if(printLastLine==1)
+	{
+		while(f<startingPoint)
+		{
+		printf(" ");
+		f++;
+		}	
+		while(h<width)
+		{
+		printf("*");
+		h++;
+		}
+		printf("\n");
+	}
+	else if(printLastLine==0)
+	{
+		
+	}
+	
+}
+/* we use Circle equation.If the x2 + y2 is smaller than radius we print star .if x2 + y2 bigger than radius we print space.*/
+void drawDoubleCircle(int radius, int startingPoint , int whellDistance)
+{
+    int a=-radius,b=-radius,c=0,d=0;
+    
+
+	while(a<=radius)
+	{
+		while(startingPoint>c)
+		{
+			printf(" ");
+			c++;
+		}
+		c=0;
+		for(b=-radius;b<=radius;b++)
+		{
+			
+			if(((a*a)+(b*b))<=(radius*radius))
+			{
+				
+				printf("*");
+			}
+			
+			if(((a*a)+(b*b))>(radius*radius))
+			{
+				
+				printf(" ");
+			}
+			
+		
+		}
+		
+		
+		while(whellDistance>d)	
+			{
+			printf(" ");
+			d++;
+			}
+			d=0;		
+		
+		
+		b=-radius;
+		while(b<=radius)
+		{
+			
+			if(((a*a)+(b*b))<=(radius*radius))
+			{
+				
+				printf("*");
+			}
+			
+			if(((a*a)+(b*b))>(radius*radius))
+			{
+				
+				printf(" ");
+			}
+			b++;
+			
+		}
+		
+		printf("\n");
+		a++;
+	}
+    
+}
+
+	
+	
+
+void drawCar()
+{
+	drawRectangle(30,5,10,0);
+	drawRectangle(50,5,0,1);
+	drawDoubleCircle(4,10,12);
+	
+	
+}

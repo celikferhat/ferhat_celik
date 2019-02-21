@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+/*function plot graph of given function*/
+
+void drawFunction(int xAxis,int yAxis,int functionNumber)
+{
+    int a,b;
+    
+    for(a=yAxis;a>=0;a--)
+    {
+        printf("|");/*print y axis*/
+        if(a != 0)
+        {
+            for (b=0;b<xAxis;b++)
+            {
+                if(a==fTheFunction(b,functionNumber))/*drow graph*/
+                    printf("*");
+                printf(" ");
+            }        
+        }
+        else
+        {
+            for(b=0;b<xAxis;b++)
+            printf("-");/*print x axis*/
+        }
+    }
+    
+}
