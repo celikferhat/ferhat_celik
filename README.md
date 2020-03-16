@@ -1,2 +1,5 @@
 # ferhat_celik
-my repo
+Şuan üzerinde çalıştığım bitirme konusu : Network Monitoring Tool
+
+Reset Bilisim (Son çalıştığım şirket)
+- Psikoloji kliğini için geliştirdiğim uygulamaya buradan ulaşabilirsiniz 
