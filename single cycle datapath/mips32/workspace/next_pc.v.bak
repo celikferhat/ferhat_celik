@@ -1,0 +1,17 @@
+module next_pc(pc, nextPc, clock);
+	input [31:0] pc;	
+	output reg [31:0] nextPc;
+	input clock;
+	
+	
+	initial begin
+		nextPc = -1;
+	end
+	
+	always@(posedge clock) begin
+
+			nextPc = pc+1;
+		
+	end
+
+endmodule

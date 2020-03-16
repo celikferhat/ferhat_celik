@@ -1,0 +1,45 @@
+module data_memory(data, address,write_data ,memWrite,memRead, store_signal,clk );
+
+	output  [31:0] data;
+	input [31:0] address,write_data;
+	input memRead,memWrite,clk;
+	input [1:0] store_signal;
+	reg [31:0] data_mem [127:0];
+	
+	
+	
+
+	
+	
+	 
+		
+			assign data = data_mem[address];
+		
+	
+	always @(posedge clk)begin 
+	
+		if ( memWrite)
+		begin			
+			//data_mem[address] <= write_data[31:0];
+			if(store_signal[0] == 0 && store_signal[1] == 0) begin   // store byte
+				data_mem[address][7:0] <= write_data[7:0];
+				
+			end
+			if(store_signal[0] == 1 && store_signal[1] == 0) begin   // store half word
+				data_mem[address][15:0] <= write_data[15:0];
+				
+			end
+			if(store_signal[0] == 0 && store_signal[1] == 1) begin   // store word
+				data_mem[address] <= write_data[31:0];
+				
+			end
+		end
+	end  
+
+	
+	
+	
+	
+endmodule
+
+ 

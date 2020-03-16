@@ -1,0 +1,494 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mips32_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/instruction_memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module _32bit_shift_right
+# 
+# Top level modules:
+# 	_32bit_shift_right
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module _32bit_shift_left
+# 
+# Top level modules:
+# 	_32bit_shift_left
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu {C:/Users/FERHAT/Desktop/mips32/workspace/alu/alu32.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu32
+# 
+# Top level modules:
+# 	alu32
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu {C:/Users/FERHAT/Desktop/mips32/workspace/alu/_4mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module _4mux
+# 
+# Top level modules:
+# 	_4mux
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu {C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module _2mux
+# 
+# Top level modules:
+# 	_2mux
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu {C:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_msb_alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module _1bit_msb_alu
+# 
+# Top level modules:
+# 	_1bit_msb_alu
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu {C:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module _1bit_alu
+# 
+# Top level modules:
+# 	_1bit_alu
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/zero_extender.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module zero_extender
+# 
+# Top level modules:
+# 	zero_extender
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/xor_module.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module xor_module
+# 
+# Top level modules:
+# 	xor_module
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/sign_zero_mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sign_zero_mux
+# 
+# Top level modules:
+# 	sign_zero_mux
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/sign_extender.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sign_extender
+# 
+# Top level modules:
+# 	sign_extender
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/mux_for_memtoWriteData.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_for_memtoWriteData
+# 
+# Top level modules:
+# 	mux_for_memtoWriteData
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/mips_registers.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# 
+# Top level modules:
+# 	mips_registers
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/memtoWriteData.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memtoWriteData
+# 
+# Top level modules:
+# 	memtoWriteData
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/data_memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module data_memory
+# 
+# Top level modules:
+# 	data_memory
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/control_unit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_4mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module _32bit_4mux
+# 
+# Top level modules:
+# 	_32bit_4mux
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_2mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module _32bit_2mux
+# 
+# Top level modules:
+# 	_32bit_2mux
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/mips32.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips32
+# 
+# Top level modules:
+# 	mips32
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/alu_control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_xor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module _32bit_xor
+# 
+# Top level modules:
+# 	_32bit_xor
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/next_pc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module next_pc
+# 
+# Top level modules:
+# 	next_pc
+# vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32 {C:/Users/FERHAT/Desktop/mips32/jump_address.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module jump_address
+# 
+# Top level modules:
+# 	jump_address
+# 
+vlog -reportprogress 300 -work work C:/Users/FERHAT/Desktop/mips32/workspace/testbench/mips32_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips32_testbench
+# 
+# Top level modules:
+# 	mips32_testbench
+vsim work.mips32_testbench
+# vsim work.mips32_testbench 
+# Loading work.mips32_testbench
+# Loading work.mips32
+# Loading work._2mux
+# Loading work.next_pc
+# Loading work.jump_address
+# Loading work._32bit_2mux
+# Loading work.instruction_memory
+# Loading work.control_unit
+# Loading work.mips_registers
+# Loading work.sign_extender
+# Loading work.zero_extender
+# Loading work.sign_zero_mux
+# Loading work.alu_control
+# Loading work.alu32
+# Loading work._1bit_alu
+# Loading work.xor_module
+# Loading work._4mux
+# Loading work._1bit_msb_alu
+# Loading work._32bit_xor
+# Loading work._32bit_shift_left
+# Loading work._32bit_shift_right
+# Loading work._32bit_4mux
+# Loading work.data_memory
+# Loading work.mux_for_memtoWriteData
+# Loading work.memtoWriteData
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/mips32.v(52): [PCDPC] - Port size (5 or 5) does not match connection size (6) for port 'write_reg'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/mips_registers.v(2).
+# 
+#         Region: /mips32_testbench/a/m2
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(6): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mx0
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(39): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxa0
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(40): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxa1
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(72): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxb0
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(73): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxb1
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(74): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxb2
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(75): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxb3
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(105): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxc0
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(106): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxc1
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(107): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxc2
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(108): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxc3
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(109): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxc4
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(110): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxc5
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(111): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxc6
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(112): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxc7
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(138): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd0
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(139): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd1
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(140): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd2
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(141): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd3
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(142): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd4
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(143): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd5
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(144): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd6
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(145): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd7
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(146): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd8
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(147): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd9
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(148): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd10
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(149): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd11
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(150): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd12
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(151): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd13
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(152): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd14
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v(153): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sl/mxd15
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(37): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mx31
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(69): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxa30
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(70): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxa31
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(100): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxb28
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(101): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxb29
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(102): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxb30
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(103): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxb31
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(129): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxc24
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(130): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxc25
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(131): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxc26
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(132): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxc27
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(133): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxc28
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(134): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxc29
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(135): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxc30
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(136): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxc31
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(154): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd16
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(155): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd17
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(156): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd18
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(157): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd19
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(158): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd20
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(159): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd21
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(160): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd22
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(161): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd23
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(162): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd24
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(163): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd25
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(164): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd26
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(165): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd27
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(166): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd28
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(167): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd29
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(168): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd30
+# ** Warning: (vsim-3015) C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v(169): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v(1).
+# 
+#         Region: /mips32_testbench/a/a1/sr/mxd31
+add wave -position insertpoint  \
+sim:/mips32_testbench/index \
+sim:/mips32_testbench/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: FERHAT  Hostname: DESKTOP-KE2P9LT  ProcessID: 19096
+# 
+#           Attempting to use alternate WLF file "./wlft712km7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft712km7
+# 
+step -current
+# I Type Instruction 
+# opcode: 111110 | rs: 00001 | rt: 00010 | imm: 0000000000000011   
+# RS: 00000000000000000000000000000001
+# Result:00000000000000000000000000000010           index:   0 
+# 
+# R Type Instruction 
+# opcode: 000000 | rs: 00001 | rt: 00010 | rd: 00100  | shamt: 00000  | funct: 000000  
+# RS: 00000000000000000000000000000001
+# RT: 00000000000000000000000000000010
+# Result:00000000000000000000000000000000           index:   1 
+# 
+# R Type Instruction 
+# opcode: 000000 | rs: 00001 | rt: 00010 | rd: 00101  | shamt: 00000  | funct: 000001  
+# RS: 00000000000000000000000000000001
+# RT: 00000000000000000000000000000010
+# Result:00000000000000000000000000000011           index:   2 
+# 
+# R Type Instruction 
+# opcode: 000000 | rs: 00001 | rt: 00010 | rd: 00110  | shamt: 00000  | funct: 000010  
+# RS: 00000000000000000000000000000001
+# RT: 00000000000000000000000000000010
+# Result:00000000000000000000000000000011           index:   3 
+# 
+# R Type Instruction 
+# opcode: 000000 | rs: 00001 | rt: 00010 | rd: 00111  | shamt: 00000  | funct: 000011  
+# RS: 00000000000000000000000000000001
+# RT: 00000000000000000000000000000010
+# Result:00000000000000000000000000000011           index:   4 
+# 
+# R Type Instruction 
+# opcode: 000000 | rs: 00011 | rt: 00001 | rd: 01000  | shamt: 00000  | funct: 000100  
+# RS: 00000000000000000000000000000011
+# RT: 00000000000000000000000000000001
+# Result:00000000000000000000000000000010           index:   5 
+# 
+# R Type Instruction 
+# opcode: 000000 | rs: 01001 | rt: 01010 | rd: 01011  | shamt: 00000  | funct: 000101  
+# RS: 00000000000000000000000011110000
+# RT: 00000000000000000000111100000000
+# Result:00000000000000000000000000000001           index:   6 
+# 
+# R Type Instruction 
+# opcode: 000000 | rs: 01001 | rt: 01010 | rd: 01100  | shamt: 10100  | funct: 000110  
+# RS: 00000000000000000000000011110000
+# RT: 00000000000000000000111100000000
+# Result:00000000000000000000000011110000           index:   7 
+# 
+# J Type Instruction 
+# opcode: 111111 | target address: 00000000000000000000000000 
+# Result:00000000000000000000000000000000           index:   8 
+# 
+# R Type Instruction 
+# opcode: 000000 | rs: 01001 | rt: 01010 | rd: 01101  | shamt: 10100  | funct: 000111  
+# RS: 00000000000000000000000011110000
+# RT: 00000000000000000000111100000000
+# Result:00000000000000000000000011110000           index:   9 
+# 
+# I Type Instruction 
+# opcode: 000001 | rs: 11101 | rt: 11110 | imm: 0000000000010101   
+# RS: 00000000000000000000000000011101
+# Result:00000000000000000000000000010101           index:  10 
+# 
+# I Type Instruction 
+# opcode: 000100 | rs: 11000 | rt: 11001 | imm: 0000000000000111   
+# RS: 00000000000000000000000000011000
+# Result:00000000000000000000000000011111           index:  11 
+# 
+# I Type Instruction 
+# opcode: 100011 | rs: 11111 | rt: 00000 | imm: 0000000000000000   
+# RS: 00000000000000000000000000011111
+# Result:01010101010101010101010101010101           index:  12 
+# 
+# I Type Instruction 
+# opcode: 100001 | rs: 11111 | rt: 00000 | imm: 0000000000000000   
+# RS: 00000000000000000000000000011111
+# Result:00000000000000000101010101010101           index:  13 
+# 
+# I Type Instruction 
+# opcode: 100000 | rs: 10101 | rt: 00000 | imm: 0000000000000000   
+# RS: 00000000000000000000000000010101
+# Result:00000000000000000000000000010101           index:  14 
+# 
+# J Type Instruction 
+# opcode: 010001 | target address: 00000000000000000000010101 
+# Result:00000000000000000000000000000000           index:  15 
+# 
+# I Type Instruction 
+# opcode: 101011 | rs: 10010 | rt: 10011 | imm: 0000000000000000   
+# RS: 00000000000000000000000000010010
+# Result:00000000000000000000000000010010           index:  16 
+# 
+# R Type Instruction 
+# opcode: xxxxxx | rs: xxxxx | rt: xxxxx | rd: xxxxx  | shamt: xxxxx  | funct: xxxxxx  
+# RS: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# RT: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx           index:  17 
+# 
+# son
+# ** Note: $finish    : C:/Users/FERHAT/Desktop/mips32/workspace/testbench/mips32_testbench.v(49)
+#    Time: 1020 ps  Iteration: 1  Instance: /mips32_testbench
+# 1
+# Break in Module mips32_testbench at C:/Users/FERHAT/Desktop/mips32/workspace/testbench/mips32_testbench.v line 49

@@ -1,0 +1,17 @@
+YACC BÖLÜMÜ
+4 işlemin tamamını desktekliyor.
+İç içe ifadeler çalışıyor.
+(list 1 2 3) ifadesi ile liste tanımlanabiliyor.
+AND OR NOT EQUAL ifadelerinin hepsi çalışıyor.
+if for while deffun set yok
+
+LİSP BÖLÜMÜ
+iç içe ifadelerin hepsi çalışıyor.
+boolean ifadelerin hepsi çalışıyor.
+set çalışıyor.
+identifier ile 4 işlem ve boolen ifadeler birlikte çalışıyor ==> (set temp 5) (+ temp 4) Result : 9
+if condition'ı  identifier ile birlikte basit halde çalışıyor ==> (if (temp 5) (+ 1 1) (+ 2 2) ) Result: 2
+for while deffun tanımlı değil ancak bir önceki ödevdeki lexer kodum tamamen doğru olduğuundan overflow hatası vermekte bu ifadeler denendiğinde.(syntax hatası vermez)
+yanlış ifadelerde syntax hatası verir ve daha önce tanımlı olmayan identifier kullanılmaya çalışıldığında daha önce tanımlanmamış şeklinde hata verir.
+
+test.txt içerisinde test kodum mevcut.

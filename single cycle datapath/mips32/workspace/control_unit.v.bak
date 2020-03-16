@@ -1,0 +1,37 @@
+module control_unit(opcode, memRead, memWrite, signal_regWrite,zero_or_sign,load_select,store_signal,lui_or_other);
+input zero_or_sign;
+output [1:0] load_select,store_signal;
+input [5:0] opcode;
+wire lb, lbu, lh, lhu, lui, lw, sb, sh, sw;
+output memRead, memWrite, signal_regWrite,lui_or_other;
+
+
+
+
+and a1(lb,  opcode[5], ~opcode[4], ~opcode[3], ~opcode[2], ~opcode[1], ~opcode[0]);
+and a2(lbu, opcode[5], ~opcode[4], ~opcode[3], opcode[2], ~opcode[1], ~opcode[0]);
+and a3(lh,  opcode[5], ~opcode[4], ~opcode[3], ~opcode[2], ~opcode[1], opcode[0]);
+and a4(lhu, opcode[5], ~opcode[4], ~opcode[3], opcode[2], ~opcode[1], opcode[0]);
+and a5(lui, ~opcode[5], ~opcode[4], opcode[3], opcode[2], opcode[1], opcode[0]);
+and a6(lw,  opcode[5], ~opcode[4], ~opcode[3], ~opcode[2], opcode[1], opcode[0]);
+and a7(sb,  opcode[5], ~opcode[4], opcode[3], ~opcode[2], ~opcode[1], ~opcode[0]);
+and a8(sh,  opcode[5], ~opcode[4], opcode[3], ~opcode[2], ~opcode[1], opcode[0]);
+and a9(sw,  opcode[5], ~opcode[4], opcode[3], ~opcode[2], opcode[1], opcode[0]);
+
+
+
+or o1( memRead, lb, lbu, lh, lhu, lui,lw);
+or o2( memWrite, sb, sh, sw);
+or o3( signal_regWrite , lb, lbu, lh, lhu, lui,lw);
+or o4( zero_or_sign , lb,lh);
+
+or o5( load_select[0] , lb , lbu , lui );
+or o6( load_select[1] , lh , lhu , lui );
+
+or o7(store_signal[0],sh,sh);
+or o8(store_signal[1],sw,sw);
+or o9(lui_or_other,lui,lui);
+
+
+
+endmodule

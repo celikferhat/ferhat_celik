@@ -1,0 +1,10 @@
+module alu_control(aluop,funct , opcode);
+	
+	input [5:0] funct,opcode;
+	output [3:0] aluop;
+	wire r_type;
+	
+	and a1(r_type, ~funct[0],~funct[1],~funct[2],~funct[3],~funct[4],~funct[5]);
+	
+	
+	

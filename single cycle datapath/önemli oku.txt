@@ -1,0 +1,2 @@
+Farklý bir testbech kullanacaksanýz lütfen raporda bulunan instruction kodlarýný kullanýn.
+Mipsin kullandýklarýndan farklý instruction kodlarý kullandým alacaðýnýz sonuçlar yanlýþ olacaktýr.

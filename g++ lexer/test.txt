@@ -1,0 +1,8 @@
+;; helloworlds.g++
+(deffun sumup (x)
+ (if (equal x 0)
+    1
+    (+ x (sumup (- x 1)))
+    )
+(set a (list 4 5)) ;; (liste 4 5) ifadesi de function call ile aynı yapıya sahip olduğundan hata vermemektedir.Ama regular expression normalde çalışıyor.
+)

@@ -1,0 +1,515 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\FERHAT\Desktop\mips32\simulation\modelsim
+v_1bit_alu
+IPajLN89Q46aQ<TKh@8_CX0
+VlM;A[EU>=E`C9BE]=Q9BT1
+Z1 dC:\Users\FERHAT\Desktop\mips32\simulation\modelsim
+w1573902860
+8C:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_alu.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_alu.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu -O0
+n@_1bit_alu
+!i10b 1
+!s100 kf@LPzadCK0e>Gj9FDEc11
+!s85 0
+!s108 1579113700.311000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu|C:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_alu.v|
+!s101 -O0
+v_1bit_msb_alu
+Ia[1X@P<>k?nG[DeBg<U5J1
+V:Hg6BnG[C2BI[jIX_;1UV2
+R1
+w1573902947
+8C:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_msb_alu.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_msb_alu.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@_1bit_msb_alu
+!i10b 1
+!s100 oNH7NA];PKMMLf_eQf9BY3
+!s85 0
+!s108 1579113700.223000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_msb_alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu|C:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_msb_alu.v|
+!s101 -O0
+v_2mux
+I3Vl1R37:Mm7jIV^WDQg@=0
+V[FF8I]i56?HbiehYD^OK:3
+R1
+w1573826159
+8C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@_2mux
+!i10b 1
+!s100 g@R`FiI[dU8E;iWUd;2j21
+!s85 0
+!s108 1579113700.133000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu|C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v|
+!s101 -O0
+v_32bit_2mux
+I<=3N>R8B6S7>MP5IjU`]j3
+Vbk4;0AW]NSzI5Y;8EiK<D2
+R1
+w1575999895
+8C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_2mux.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/_32bit_2mux.v
+L0 1
+R2
+r1
+31
+R3
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace -O0
+n@_32bit_2mux
+!i10b 1
+!s100 K0cCdJJ<99O?EN8S7HS8P3
+!s85 0
+!s108 1579113701.667000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_2mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_2mux.v|
+!s101 -O0
+v_32bit_4mux
+IY]]K7df5B6<PHl_JLozUG2
+V7c6mamd`>B0DCFF4CJiZh0
+R1
+w1576005049
+8C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_4mux.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/_32bit_4mux.v
+L0 1
+R2
+r1
+31
+R3
+R5
+n@_32bit_4mux
+!i10b 1
+!s100 kPaMW:BLc85T3;Mbc`9IF2
+!s85 0
+!s108 1579113701.568000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_4mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_4mux.v|
+!s101 -O0
+v_32bit_shift_left
+I^J;:No>>DF4l6ebH_7hmW3
+V?95^[`dQFQ3@ALH@R]jhn0
+R1
+w1578740769
+8C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v
+L0 1
+R2
+r1
+31
+R3
+R5
+n@_32bit_shift_left
+!i10b 1
+!s100 S9jR3H7^CZmGHGUQm@<Wi3
+!s85 0
+!s108 1579113699.849000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v|
+!s101 -O0
+v_32bit_shift_right
+I[GP2=G<m^HAbPf>D48_[N3
+V^@go7G`=fc1;1d3[6j6c02
+R1
+w1578740756
+8C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v
+L0 1
+R2
+r1
+31
+R3
+R5
+n@_32bit_shift_right
+!i10b 1
+!s100 8=eg4glXc_G7gakZ8dP651
+!s85 0
+!s108 1579113699.759000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v|
+!s101 -O0
+v_32bit_xor
+IZU[elY;UO3OPY<m_RKNdW1
+Vjn8cD1Co^aSOQ=cIR<VFn0
+R1
+w1579031231
+8C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_xor.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/_32bit_xor.v
+L0 1
+R2
+r1
+31
+R3
+R5
+n@_32bit_xor
+!i10b 1
+!s100 i>7ZBZF]?zoGdM8bhcRaY0
+!s85 0
+!s108 1579113701.966000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_xor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_xor.v|
+!s101 -O0
+v_4mux
+Ib[5GCWGdP^JTmS7jgJmPW3
+Vj@Mf6K2B<=_]F@9T3UCd`3
+R1
+w1573831336
+8C:/Users/FERHAT/Desktop/mips32/workspace/alu/_4mux.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/alu/_4mux.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@_4mux
+!i10b 1
+!s100 b<c=;j;4fd8Ozin6`zc;b1
+!s85 0
+!s108 1579113700.043000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/alu/_4mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu|C:/Users/FERHAT/Desktop/mips32/workspace/alu/_4mux.v|
+!s101 -O0
+valu32
+IIL@PaZdChZYSQ9`ejaJf`1
+V1C5S_7A=0=SYjkNLA9HRA0
+R1
+w1579098616
+8C:/Users/FERHAT/Desktop/mips32/workspace/alu/alu32.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/alu/alu32.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 4WJQP`m7D>j5JW;^X;Xk;1
+!s85 0
+!s108 1579113699.945000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/alu/alu32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu|C:/Users/FERHAT/Desktop/mips32/workspace/alu/alu32.v|
+!s101 -O0
+valu_control
+I42ZJOQ9;1IF5AYmU:jS>[0
+VcFXnbOIL3TDGLiaG>9[VH1
+R1
+w1579084384
+8C:/Users/FERHAT/Desktop/mips32/workspace/alu_control.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/alu_control.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 C7h7JY[K]=WV<=bA?8cd;1
+!s85 0
+!s108 1579113701.874000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/alu_control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/alu_control.v|
+!s101 -O0
+vcontrol_unit
+IbBD9RE;C@^JFcPf?GI0^;0
+V1j6^`F[zAoOH;aD_C_7k;1
+R1
+w1579094182
+8C:/Users/FERHAT/Desktop/mips32/workspace/control_unit.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/control_unit.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 Xd]>73MID9<^7L_@I^8201
+!s85 0
+!s108 1579113701.447000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/control_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/control_unit.v|
+!s101 -O0
+vdata_memory
+I9Yn:B[GT3SE1k8<3NbJS93
+VG>_nd^=`O1nO:i?l6@oXP2
+R1
+w1579111267
+8C:/Users/FERHAT/Desktop/mips32/workspace/data_memory.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/data_memory.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 B5Sg^IoG4Voo01ihzdN352
+!s85 0
+!s108 1579113701.326000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/data_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/data_memory.v|
+!s101 -O0
+vinstruction_memory
+I7K]d[Z7O:W?LE_BkH]5B50
+VoE:digBi=6W3@45g:``hC0
+R1
+w1579078519
+8C:/Users/FERHAT/Desktop/mips32/workspace/instruction_memory.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/instruction_memory.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 mNeXOJokUkV5bSS^Zn0LQ3
+!s85 0
+!s108 1579113699.652000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/instruction_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/instruction_memory.v|
+!s101 -O0
+vjump_address
+I:>bX4[[TC[]hBlL@ObF`Z3
+Voj1XQHR=>K66U@l1T2XEH3
+R1
+w1579090903
+8C:/Users/FERHAT/Desktop/mips32/jump_address.v
+FC:/Users/FERHAT/Desktop/mips32/jump_address.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 Vk6cYP]7dcb5LeMa`3XU70
+!s85 0
+!s108 1579113702.217000
+!s107 C:/Users/FERHAT/Desktop/mips32/jump_address.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32|C:/Users/FERHAT/Desktop/mips32/jump_address.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32 -O0
+vmemtoWriteData
+IfKn7hLn4^]fA_I4nYQ]:X0
+Vhz3FzVnl:H9Z_Sz_A05k;0
+R1
+w1576010558
+8C:/Users/FERHAT/Desktop/mips32/workspace/memtoWriteData.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/memtoWriteData.v
+L0 1
+R2
+r1
+31
+R3
+R5
+nmemto@write@data
+!i10b 1
+!s100 6o`MKeUl9JQ>z6L^1T[YR3
+!s85 0
+!s108 1579113701.207000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/memtoWriteData.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/memtoWriteData.v|
+!s101 -O0
+vmips32
+ISmU69DhaH8Y5mIU^Z>^RL1
+V0zC0?05z3^L;dk@[G?E;>3
+R1
+w1579107859
+8C:/Users/FERHAT/Desktop/mips32/workspace/mips32.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/mips32.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 @l0Cil:ma6KUn01Nfh_f^0
+!s85 0
+!s108 1579113701.773000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/mips32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/mips32.v|
+!s101 -O0
+vmips32_testbench
+!i10b 1
+!s100 0k6jO5nALgjl>3bn?[Wd71
+IJo^nBRUDd9MmbZ7f>f[N52
+V4NKP?mJKLm53`KFIjm2<72
+R1
+w1579111092
+8C:/Users/FERHAT/Desktop/mips32/workspace/testbench/mips32_testbench.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/testbench/mips32_testbench.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1579113714.993000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/testbench/mips32_testbench.v|
+!s90 -reportprogress|300|-work|work|C:/Users/FERHAT/Desktop/mips32/workspace/testbench/mips32_testbench.v|
+!s101 -O0
+o-work work -O0
+vmips_registers
+IS7P_d@=e]1aK3aga6QhcS0
+VIKjnY3G]3R=R@`]J?b;XX0
+R1
+w1579086026
+8C:/Users/FERHAT/Desktop/mips32/workspace/mips_registers.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/mips_registers.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 Y5Z`;`LNKi3G0DfX=Hlma3
+!s85 0
+!s108 1579113700.915000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/mips_registers.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/mips_registers.v|
+!s101 -O0
+vmux_for_memtoWriteData
+I^HU@QVJl8@Gg[eUK;fz8Y1
+Vg9MMzHBHXP1A_1z8TBVYV3
+R1
+w1576009474
+8C:/Users/FERHAT/Desktop/mips32/workspace/mux_for_memtoWriteData.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/mux_for_memtoWriteData.v
+L0 1
+R2
+r1
+31
+R3
+R5
+nmux_for_memto@write@data
+!i10b 1
+!s100 PAGOz1T8WH[hXiAE:S9RV2
+!s85 0
+!s108 1579113700.791000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/mux_for_memtoWriteData.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/mux_for_memtoWriteData.v|
+!s101 -O0
+vnext_pc
+IW73JSEBo1Tj9V_8b1W1^42
+Vl_Mz_:zd2eAYE0_E:7e6J3
+R1
+w1579094254
+8C:/Users/FERHAT/Desktop/mips32/workspace/next_pc.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/next_pc.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 `Q<A67HFBlzU89G]_BY9z2
+!s85 0
+!s108 1579113702.069000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/next_pc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/next_pc.v|
+!s101 -O0
+vsign_extender
+I:fF4Sl@33ldHDY5ST3N=_3
+VkR0Ra5D_`b=9GRV5;Un;B2
+R1
+w1575997627
+8C:/Users/FERHAT/Desktop/mips32/workspace/sign_extender.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/sign_extender.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 6V3RA?C_7zJIchE@RSoVI2
+!s85 0
+!s108 1579113700.690000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/sign_extender.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/sign_extender.v|
+!s101 -O0
+vsign_zero_mux
+IHRRa7@34fZ8Gg2P=Gfc4T2
+V@mSX=Y58Y>LQ1APY[:C=_2
+R1
+w1576000027
+8C:/Users/FERHAT/Desktop/mips32/workspace/sign_zero_mux.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/sign_zero_mux.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 WgZ0eJ`F991kPJ=fCQK=;1
+!s85 0
+!s108 1579113700.591000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/sign_zero_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/sign_zero_mux.v|
+!s101 -O0
+vxor_module
+IHmRRY3WHUdGC9jD:EVdm>3
+Vj[S951_mOQVGU9GL7b9o^3
+R1
+w1579031055
+8C:/Users/FERHAT/Desktop/mips32/workspace/xor_module.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/xor_module.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 oz=jIN20;ORP=Y:Rh1FgH3
+!s85 0
+!s108 1579113700.503000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/xor_module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/xor_module.v|
+!s101 -O0
+vzero_extender
+Ic<`Y9=Kgb[g03^ga848?:0
+VN5aYR_=C0nBbmO6z5:`E@2
+R1
+w1575996937
+8C:/Users/FERHAT/Desktop/mips32/workspace/zero_extender.v
+FC:/Users/FERHAT/Desktop/mips32/workspace/zero_extender.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 Jo;:E:PYl3B4E=6OR?70h2
+!s85 0
+!s108 1579113700.408000
+!s107 C:/Users/FERHAT/Desktop/mips32/workspace/zero_extender.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FERHAT/Desktop/mips32/workspace|C:/Users/FERHAT/Desktop/mips32/workspace/zero_extender.v|
+!s101 -O0

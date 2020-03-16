@@ -1,0 +1,38 @@
+module mips32(instruction, result,clk);
+
+//I type OP  RS  RT  16BIT
+//I type  6   5   5   16
+
+// Load Byte					100000
+// Load Byte Unsigned		100100
+// Load Halfword				100001
+// Load Halfword Unsigned	100101
+// Load Upper Imm				001111
+// Load Word					100011
+// Stroe Byte					101000
+// Store Halfword				101001
+// Store Word					101011
+
+
+input clk;
+input [31:0] instruction;
+output [31:0] result;
+wire memRead , memWrite , signal_regWrite , zero_or_sign,lui_or_other;
+wire [1:0] load_select , store_signal;
+wire [31:0] sign_extended , zero_extended, extended;
+wire [31:0] read_data_1,read_data_2,write_data_for_reg;
+wire [31:0] address,readData,mux_out;
+
+control_unit c1(instruction[31:26], memRead, memWrite, signal_regWrite,zero_or_sign,load_select,store_signal,lui_or_other);
+sign_extender s1(instruction[15:0],sign_extended);
+zero_extender z1(instruction[15:0],zero_extended);
+sign_zero_mux m1(extended,sign_extended,zero_extended,zero_or_sign);
+mips_registers m2( read_data_1, read_data_2, result, instruction[25:21], instruction[20:16], instruction[20:16], signal_regWrite, clk );
+_32bit_adder a1(address,read_data_1,extended);
+data_memory d1( readData,address,read_data_2,memWrite,memRead,store_signal,clk);
+mux_for_memtoWriteData m3(mux_out,readData,instruction[15:0],lui_or_other);
+memtoWriteData m4(result,mux_out,load_select);
+
+
+
+endmodule

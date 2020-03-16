@@ -1,0 +1,1191 @@
+Analysis & Synthesis report for mips32
+Wed Jan 15 18:52:10 2020
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "memtoWriteData:m4|_32bit_4mux:o1"
+ 10. Port Connectivity Checks: "mux_for_memtoWriteData:m3|_32bit_2mux:m1"
+ 11. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd31"
+ 12. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd30"
+ 13. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd29"
+ 14. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd28"
+ 15. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd27"
+ 16. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd26"
+ 17. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd25"
+ 18. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd24"
+ 19. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd23"
+ 20. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd22"
+ 21. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd21"
+ 22. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd20"
+ 23. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd19"
+ 24. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd18"
+ 25. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd17"
+ 26. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd16"
+ 27. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc31"
+ 28. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc30"
+ 29. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc29"
+ 30. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc28"
+ 31. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc27"
+ 32. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc26"
+ 33. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc25"
+ 34. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc24"
+ 35. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxb31"
+ 36. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxb30"
+ 37. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxb29"
+ 38. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxb28"
+ 39. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxa31"
+ 40. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxa30"
+ 41. Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mx31"
+ 42. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd15"
+ 43. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd14"
+ 44. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd13"
+ 45. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd12"
+ 46. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd11"
+ 47. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd10"
+ 48. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd9"
+ 49. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd8"
+ 50. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd7"
+ 51. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd6"
+ 52. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd5"
+ 53. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd4"
+ 54. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd3"
+ 55. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd2"
+ 56. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd1"
+ 57. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd0"
+ 58. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc7"
+ 59. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc6"
+ 60. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc5"
+ 61. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc4"
+ 62. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc3"
+ 63. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc2"
+ 64. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc1"
+ 65. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc0"
+ 66. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxb3"
+ 67. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxb2"
+ 68. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxb1"
+ 69. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxb0"
+ 70. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxa1"
+ 71. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxa0"
+ 72. Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mx0"
+ 73. Port Connectivity Checks: "alu32:a1"
+ 74. Port Connectivity Checks: "mips_registers:m2"
+ 75. Elapsed Time Per Partition
+ 76. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Jan 15 18:52:10 2020      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; mips32                                     ;
+; Top-level Entity Name              ; mips32                                     ;
+; Family                             ; Cyclone III                                ;
+; Total logic elements               ; 0                                          ;
+;     Total combinational functions  ; 0                                          ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 1                                          ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C16F484C6       ;                    ;
+; Top-level entity name                                                      ; mips32             ; mips32             ;
+; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                      ; Library ;
++------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; workspace/instruction_memory.v     ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/instruction_memory.v     ;         ;
+; workspace/_32bit_shift_right.v     ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_right.v     ;         ;
+; workspace/_32bit_shift_left.v      ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_shift_left.v      ;         ;
+; workspace/alu/alu32.v              ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/alu/alu32.v              ;         ;
+; workspace/alu/_4mux.v              ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/alu/_4mux.v              ;         ;
+; workspace/alu/_2mux.v              ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v              ;         ;
+; workspace/alu/_1bit_msb_alu.v      ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_msb_alu.v      ;         ;
+; workspace/alu/_1bit_alu.v          ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_alu.v          ;         ;
+; workspace/zero_extender.v          ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/zero_extender.v          ;         ;
+; workspace/xor_module.v             ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/xor_module.v             ;         ;
+; workspace/sign_zero_mux.v          ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/sign_zero_mux.v          ;         ;
+; workspace/sign_extender.v          ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/sign_extender.v          ;         ;
+; workspace/mux_for_memtoWriteData.v ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/mux_for_memtoWriteData.v ;         ;
+; workspace/mips_registers.v         ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/mips_registers.v         ;         ;
+; workspace/memtoWriteData.v         ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/memtoWriteData.v         ;         ;
+; workspace/data_memory.v            ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/data_memory.v            ;         ;
+; workspace/control_unit.v           ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/control_unit.v           ;         ;
+; workspace/_32bit_4mux.v            ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_4mux.v            ;         ;
+; workspace/_32bit_2mux.v            ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_2mux.v            ;         ;
+; workspace/mips32.v                 ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/mips32.v                 ;         ;
+; workspace/alu_control.v            ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/alu_control.v            ;         ;
+; workspace/_32bit_xor.v             ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_xor.v             ;         ;
+; workspace/next_pc.v                ; yes             ; User Verilog HDL File        ; C:/Users/FERHAT/Desktop/mips32/workspace/next_pc.v                ;         ;
+; jump_address.v                     ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/FERHAT/Desktop/mips32/jump_address.v                     ;         ;
++------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 1     ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 1     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |mips32                    ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 1    ; 0            ; |mips32             ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "memtoWriteData:m4|_32bit_4mux:o1" ;
++-----------+-------+----------+-------------------------------+
+; Port      ; Type  ; Severity ; Details                       ;
++-----------+-------+----------+-------------------------------+
+; b[31..8]  ; Input ; Info     ; Stuck at GND                  ;
+; c[31..16] ; Input ; Info     ; Stuck at GND                  ;
+; d[15..0]  ; Input ; Info     ; Stuck at GND                  ;
++-----------+-------+----------+-------------------------------+
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_for_memtoWriteData:m3|_32bit_2mux:m1" ;
++----------+-------+----------+----------------------------------------+
+; Port     ; Type  ; Severity ; Details                                ;
++----------+-------+----------+----------------------------------------+
+; b[15..0] ; Input ; Info     ; Stuck at GND                           ;
++----------+-------+----------+----------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd31"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd30"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd29"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd28"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd27"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd26"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd25"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd24"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd23"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd22"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd21"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd20"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd19"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd18"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd17"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxd16"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc31"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc30"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc29"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc28"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc27"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc26"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc25"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxc24"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxb31"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxb30"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxb29"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxb28"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxa31"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mxa30"                                                                                                                                        ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_right:sr|_2mux:mx31"                                                                                                                                         ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd15"                                                                                                                                         ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd14"                                                                                                                                         ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd13"                                                                                                                                         ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd12"                                                                                                                                         ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd11"                                                                                                                                         ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd10"                                                                                                                                         ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd9"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd8"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd7"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd6"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd5"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd4"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd3"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd2"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd1"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxd0"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc7"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc6"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc5"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc4"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc3"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc2"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc1"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxc0"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxb3"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxb2"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxb1"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxb0"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxa1"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mxa0"                                                                                                                                          ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1|_32bit_shift_left:sl|_2mux:mx0"                                                                                                                                           ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu32:a1"                                                                                ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; v         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mips_registers:m2"                                                                                                                                                                   ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; write_reg ; Input ; Warning  ; Input port expression (6 bits) is wider than the input port (5 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Wed Jan 15 18:52:06 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips32 -c mips32
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (12019): Can't analyze file -- file workspace/jump_address.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/instruction_memory.v
+    Info (12023): Found entity 1: instruction_memory
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/_32bit_shift_right.v
+    Info (12023): Found entity 1: _32bit_shift_right
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/_32bit_shift_left.v
+    Info (12023): Found entity 1: _32bit_shift_left
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu/half_adder_testbench.v
+    Info (12023): Found entity 1: half_adder_testbench
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu/half_adder.v
+    Info (12023): Found entity 1: half_adder
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu/full_adder_testbench.v
+    Info (12023): Found entity 1: full_adder_testbench
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu/full_adder.v
+    Info (12023): Found entity 1: full_adder
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu/alu32.v
+    Info (12023): Found entity 1: alu32
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu/_32bit_alu_testbench.v
+    Info (12023): Found entity 1: _32bit_alu_testbench
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu/_4mux_testbench.v
+    Info (12023): Found entity 1: _4mux_testbench
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu/_4mux.v
+    Info (12023): Found entity 1: _4mux
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu/_2mux_testbench.v
+    Info (12023): Found entity 1: _2mux_testbench
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu/_2mux.v
+    Info (12023): Found entity 1: _2mux
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu/_1bit_msb_alu.v
+    Info (12023): Found entity 1: _1bit_msb_alu
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu/_1bit_alu_testbench.v
+    Info (12023): Found entity 1: _1bit_alu_testbench
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu/_1bit_alu.v
+    Info (12023): Found entity 1: _1bit_alu
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/zero_extender.v
+    Info (12023): Found entity 1: zero_extender
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/xor_module.v
+    Info (12023): Found entity 1: xor_module
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/sign_zero_mux.v
+    Info (12023): Found entity 1: sign_zero_mux
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/sign_extender.v
+    Info (12023): Found entity 1: sign_extender
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/mux_for_memtowritedata.v
+    Info (12023): Found entity 1: mux_for_memtoWriteData
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/mips_registers.v
+    Info (12023): Found entity 1: mips_registers
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/memtowritedata.v
+    Info (12023): Found entity 1: memtoWriteData
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/data_memory.v
+    Info (12023): Found entity 1: data_memory
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/control_unit.v
+    Info (12023): Found entity 1: control_unit
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/_32bit_adder.v
+    Info (12023): Found entity 1: _32bit_adder
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/_32bit_4mux.v
+    Info (12023): Found entity 1: _32bit_4mux
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/_32bit_2mux.v
+    Info (12023): Found entity 1: _32bit_2mux
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/mips32.v
+    Info (12023): Found entity 1: mips32
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/alu_control.v
+    Info (12023): Found entity 1: alu_control
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/_32bit_xor.v
+    Info (12023): Found entity 1: _32bit_xor
+Info (12021): Found 1 design units, including 1 entities, in source file workspace/next_pc.v
+    Info (12023): Found entity 1: next_pc
+Warning (10236): Verilog HDL Implicit Net warning at alu32.v(135): created implicit net for "celik"
+Warning (10236): Verilog HDL Implicit Net warning at control_unit.v(40): created implicit net for "addi"
+Warning (10236): Verilog HDL Implicit Net warning at control_unit.v(41): created implicit net for "addiu"
+Warning (10236): Verilog HDL Implicit Net warning at control_unit.v(42): created implicit net for "slti"
+Warning (10236): Verilog HDL Implicit Net warning at control_unit.v(43): created implicit net for "sltiu"
+Info (12127): Elaborating entity "mips32" for the top level hierarchy
+Info (12128): Elaborating entity "_2mux" for hierarchy "_2mux:rd1"
+Info (12128): Elaborating entity "next_pc" for hierarchy "next_pc:n1"
+Warning (12125): Using design file jump_address.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: jump_address
+Info (12128): Elaborating entity "jump_address" for hierarchy "jump_address:ja"
+Info (12128): Elaborating entity "_32bit_2mux" for hierarchy "_32bit_2mux:mux1"
+Info (12128): Elaborating entity "instruction_memory" for hierarchy "instruction_memory:i1"
+Warning (10858): Verilog HDL warning at instruction_memory.v(4): object instruction_mem used but never assigned
+Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:c1"
+Info (12128): Elaborating entity "mips_registers" for hierarchy "mips_registers:m2"
+Info (12128): Elaborating entity "sign_extender" for hierarchy "sign_extender:s1"
+Warning (10739): Verilog HDL warning at sign_extender.v(8): actual bit length 32 differs from formal bit length 1
+Info (12128): Elaborating entity "zero_extender" for hierarchy "zero_extender:z1"
+Warning (10739): Verilog HDL warning at zero_extender.v(22): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(23): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(24): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(25): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(26): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(27): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(28): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(29): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(30): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(31): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(32): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(33): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(34): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(35): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(36): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at zero_extender.v(37): actual bit length 32 differs from formal bit length 1
+Info (12128): Elaborating entity "sign_zero_mux" for hierarchy "sign_zero_mux:m1"
+Info (12128): Elaborating entity "alu_control" for hierarchy "alu_control:ac"
+Info (12128): Elaborating entity "alu32" for hierarchy "alu32:a1"
+Info (12128): Elaborating entity "_1bit_alu" for hierarchy "alu32:a1|_1bit_alu:a0"
+Info (12128): Elaborating entity "xor_module" for hierarchy "alu32:a1|_1bit_alu:a0|xor_module:x1"
+Info (12128): Elaborating entity "_4mux" for hierarchy "alu32:a1|_1bit_alu:a0|_4mux:m1"
+Info (12128): Elaborating entity "_1bit_msb_alu" for hierarchy "alu32:a1|_1bit_msb_alu:a31"
+Info (12128): Elaborating entity "_32bit_xor" for hierarchy "alu32:a1|_32bit_xor:x1"
+Info (12128): Elaborating entity "_32bit_shift_left" for hierarchy "alu32:a1|_32bit_shift_left:sl"
+Info (12128): Elaborating entity "_32bit_shift_right" for hierarchy "alu32:a1|_32bit_shift_right:sr"
+Info (12128): Elaborating entity "_32bit_4mux" for hierarchy "alu32:a1|_32bit_4mux:m1"
+Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:d1"
+Warning (10240): Verilog HDL Always Construct warning at data_memory.v(15): inferring latch(es) for variable "data", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "data[0]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[1]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[2]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[3]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[4]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[5]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[6]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[7]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[8]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[9]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[10]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[11]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[12]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[13]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[14]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[15]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[16]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[17]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[18]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[19]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[20]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[21]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[22]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[23]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[24]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[25]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[26]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[27]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[28]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[29]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[30]" at data_memory.v(15)
+Info (10041): Inferred latch for "data[31]" at data_memory.v(15)
+Info (12128): Elaborating entity "mux_for_memtoWriteData" for hierarchy "mux_for_memtoWriteData:m3"
+Warning (10739): Verilog HDL warning at mux_for_memtoWriteData.v(11): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at mux_for_memtoWriteData.v(12): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at mux_for_memtoWriteData.v(13): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at mux_for_memtoWriteData.v(14): actual bit length 32 differs from formal bit length 1
+Info (12128): Elaborating entity "memtoWriteData" for hierarchy "memtoWriteData:m4"
+Warning (10739): Verilog HDL warning at memtoWriteData.v(9): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at memtoWriteData.v(10): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at memtoWriteData.v(11): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at memtoWriteData.v(12): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at memtoWriteData.v(13): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at memtoWriteData.v(14): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at memtoWriteData.v(22): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at memtoWriteData.v(23): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at memtoWriteData.v(24): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at memtoWriteData.v(25): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at memtoWriteData.v(30): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at memtoWriteData.v(31): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at memtoWriteData.v(32): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at memtoWriteData.v(33): actual bit length 32 differs from formal bit length 1
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "alu32:a1|zero" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "zero_or_sign" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "zero_or_sign" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "zero_or_sign" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "zero_or_sign" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "zero_or_sign" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "zero_or_sign" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "zero_or_sign" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "zero_or_sign" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "zero_or_sign" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "zero_or_sign" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "zero_or_sign" is missing source, defaulting to GND
+Warning (12241): 63 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk"
+Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 72 warnings
+    Info: Peak virtual memory: 4659 megabytes
+    Info: Processing ended: Wed Jan 15 18:52:10 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

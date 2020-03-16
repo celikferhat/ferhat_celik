@@ -1,0 +1,104 @@
+module alu32( r ,v,znot ,carry_out, a , b  ,op );
+
+input  [31:0]  a , b  ;
+input  [2:0]   op;
+output [31:0]  r ;
+output v,znot,carry_out;    // v 1 if over flow znot == z if result 0 znot =1
+wire [31:0] c_in , c_out ;
+
+wire  set;
+
+wire r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14,r15,r16;
+
+wire s1,s2,s3,s4,s5,s6,s7,s8;
+
+wire k1,k2,k3,k4;
+
+wire j1,j2,z;
+
+reg zero = 1'b0 ;
+
+_1bit_alu a0(r[0] , c_out[0] , a[0] , b[0] , set , op[2] , op  );
+
+_1bit_alu a1(r[1] ,  c_out[1] ,  a[1] ,  b[1] , zero , c_out[0]   , op  );
+_1bit_alu a2(r[2] ,  c_out[2] ,  a[2] ,  b[2] , zero , c_out[1]   , op  );
+_1bit_alu a3(r[3] ,  c_out[3] ,  a[3] ,  b[3] , zero , c_out[2]   , op  );
+_1bit_alu a4(r[4] ,  c_out[4] ,  a[4] ,  b[4] , zero , c_out[3]   , op  );
+_1bit_alu a5(r[5] ,  c_out[5] ,  a[5] ,  b[5] , zero , c_out[4]   , op  );
+_1bit_alu a6(r[6] ,  c_out[6] ,  a[6] ,  b[6] , zero , c_out[5]   , op  );
+_1bit_alu a7(r[7] ,  c_out[7] ,  a[7] ,  b[7] , zero , c_out[6]   , op  );
+_1bit_alu a8(r[8] ,  c_out[8] ,  a[8] ,  b[8] , zero , c_out[7]   , op  );
+_1bit_alu a9(r[9] ,  c_out[9] ,  a[9] ,  b[9] , zero , c_out[8]   , op  );
+_1bit_alu a10(r[10] , c_out[10] , a[10] , b[10] , zero , c_out[9]  , op  );
+_1bit_alu a11(r[11] , c_out[11] , a[11] , b[11] , zero , c_out[10] , op  );
+_1bit_alu a12(r[12] , c_out[12] , a[12] , b[12] , zero , c_out[11] , op  );
+_1bit_alu a13(r[13] , c_out[13] , a[13] , b[13] , zero , c_out[12] , op  );
+_1bit_alu a14(r[14] , c_out[14] , a[14] , b[14] , zero , c_out[13] , op  );
+_1bit_alu a15(r[15] , c_out[15] , a[15] , b[15] , zero , c_out[14] , op  );
+_1bit_alu a16(r[16] , c_out[16] , a[16] , b[16] , zero , c_out[15] , op  );
+_1bit_alu a17(r[17] , c_out[17] , a[17] , b[17] , zero , c_out[16] , op  );
+_1bit_alu a18(r[18] , c_out[18] , a[18] , b[18] , zero , c_out[17] , op  );
+_1bit_alu a19(r[19] , c_out[19] , a[19] , b[19] , zero , c_out[18] , op  );
+_1bit_alu a20(r[20] , c_out[20] , a[20] , b[20] , zero , c_out[19] , op  );
+_1bit_alu a21(r[21] , c_out[21] , a[21] , b[21] , zero , c_out[20] , op  );
+_1bit_alu a22(r[22] , c_out[22] , a[22] , b[22] , zero , c_out[21] , op  );
+_1bit_alu a23(r[23] , c_out[23] , a[23] , b[23] , zero , c_out[22] , op  );
+_1bit_alu a24(r[24] , c_out[24] , a[24] , b[24] , zero , c_out[23] , op  );
+_1bit_alu a25(r[25] , c_out[25] , a[25] , b[25] , zero , c_out[24] , op  );
+_1bit_alu a26(r[26] , c_out[26] , a[26] , b[26] , zero , c_out[25] , op  );
+_1bit_alu a27(r[27] , c_out[27] , a[27] , b[27] , zero , c_out[26] , op  );
+_1bit_alu a28(r[28] , c_out[28] , a[28] , b[28] , zero , c_out[27] , op  );
+_1bit_alu a29(r[29] , c_out[29] , a[29] , b[29] , zero , c_out[28] , op  );
+_1bit_alu a30(r[30] , c_out[30] , a[30] , b[30] , zero , c_out[29] , op  );
+
+_1bit_msb_alu a31(r[31] , carry_out , v , set , a[31] , b[31], zero , c_out[30] , op  );
+
+
+
+
+
+
+or or1(r1, r[0],r[1]);
+or or2(r2, r[2],r[3]);
+or or3(r3, r[4],r[5]);
+or or4(r4, r[6],r[7]);
+or or5(r5, r[8],r[9]);
+or or6(r6, r[10],r[11]);
+or or7(r7, r[12],r[13]);
+or or8(r8, r[14],r[15]);
+or or9(r9, r[16],r[17]);
+or or10(r10, r[18],r[19]);
+or or11(r11, r[20],r[21]);
+or or12(r12, r[22],r[23]);
+or or13(r13, r[24],r[25]);
+or or14(r14, r[26],r[27]);
+or or15(r15, r[28],r[29]);
+or or16(r16, r[30],r[31]);
+
+
+
+or sor1(s1 , r1  ,r2);
+or sor2(s2 , r3  ,r4);
+or sor3(s3 , r5  ,r6);
+or sor4(s4 , r7  ,r8);
+or sor5(s5 , r9  ,r10);
+or sor6(s6 , r11 ,r12);
+or sor7(s7 , r13 ,r14);
+or sor8(s8 , r15 ,r16);
+
+
+
+or (k1,s1,s2);
+or (k2,s3,s4);
+or (k3,s5,s6);
+or (k4,s7,s8);
+
+or (j1,k1,k2);
+or (j2,k3,k4);
+
+or (z,j1,j2);
+not (znot,z);
+
+
+
+endmodule

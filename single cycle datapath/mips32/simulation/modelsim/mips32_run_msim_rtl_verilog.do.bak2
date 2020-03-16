@@ -1,0 +1,25 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu {C:/Users/FERHAT/Desktop/mips32/workspace/alu/alu32.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu {C:/Users/FERHAT/Desktop/mips32/workspace/alu/_4mux.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu {C:/Users/FERHAT/Desktop/mips32/workspace/alu/_2mux.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu {C:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_msb_alu.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace/alu {C:/Users/FERHAT/Desktop/mips32/workspace/alu/_1bit_alu.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/zero_extender.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/xor_module.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/sign_zero_mux.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/sign_extender.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/mux_for_memtoWriteData.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/mips_registers.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/memtoWriteData.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/data_memory.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/control_unit.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_4mux.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/_32bit_2mux.v}
+vlog -vlog01compat -work work +incdir+C:/Users/FERHAT/Desktop/mips32/workspace {C:/Users/FERHAT/Desktop/mips32/workspace/mips32.v}
+
