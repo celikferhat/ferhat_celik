@@ -32,4 +32,11 @@ Bu nedenlerden dolayı arayüzü web tabanlı bir network monitoring uygulaması
 ![alt text](src/assets/github/devices.png)
 
 
+## project chart and flow chart
+
+![alt text](src/assets/github/Usage.png)
+![alt text](src/assets/github/usecase.png)
+
+
+
 
