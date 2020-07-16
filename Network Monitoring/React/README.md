@@ -1,7 +1,7 @@
 # Network Monitoring
 
 
-![Product Gif](https://drive.google.com/file/d/1TGQdz92Splfmt3hLAWqMtM2FKV_27dRO/view?usp=sharing)
+![Product Gif](src/assets/github/modem.png)
 
 Material Dashboard React is a free Material-UI Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts through an easy to use and beautiful set of components. Material Dashboard React was built over the popular Material-UI framework.
 
