@@ -5,13 +5,13 @@
 
 ## ÖZET 
 
-    Bu bitirme çalışması G.T.U. Bilgisayar Mühendisliği bölümü 4. Sınıfda hazırlanacak Lisans Bitirme Projesi içeriğini, projenin yapılma nedenini ve amacını, projenin gereksinimlerini, sistem mimarisini, başarı kriterlerini, kullanılacak olan donanım hakkında bilgiler, donanım fonksiyonları ve donanımın nasıl kullanılacağı hakkında bilgiler içermektedir.
-    Bu projede yerel ağın izlenebilmesini , ağda bulunan cihazların bulunmasını , tanımlanmasını ve kategorize edilmesini sağlayan bir ağ görüntüleme sistemi tasarlanmıştır. Ağ izleme yazılımlarıyla Router, Server, switch ve diğer önemli network cihazları veya uygulamalar gibi belirlenmiş hostlardan istatikler toplanır, Network trafiği detayı, CPU değerleri, disk kullanımı, Up-Down durumu gibi önemli verileri kontrol edilebilir. 
-    Ağ cihazlarını keşfetme ve ip , mac gibi basit bilgileri edinmek için Nmap kullanılmıştır.Nmap ile alınan veriler düzenlenerek parametre olarak Fing’e gönderilir ve detaylı cihaz bilgileri mac adresleri sayesinde öğrenilir ve kategorize edilir.Python üzerinde flask ile yazılmış web servis aracılığıyla arayüzü yazmak için kullanılan React ‘a iletilir.Arayüz üzerinde seçilen cihaza ait daha detaylı bilgilere SNMP aracılığıyla ulaşılır.
+Bu bitirme çalışması G.T.U. Bilgisayar Mühendisliği bölümü 4. Sınıfda hazırlanacak Lisans Bitirme Projesi içeriğini, projenin yapılma nedenini ve amacını, projenin gereksinimlerini, sistem mimarisini, başarı kriterlerini, kullanılacak olan donanım hakkında bilgiler, donanım fonksiyonları ve donanımın nasıl kullanılacağı hakkında bilgiler içermektedir.
+Bu projede yerel ağın izlenebilmesini , ağda bulunan cihazların bulunmasını , tanımlanmasını ve kategorize edilmesini sağlayan bir ağ görüntüleme sistemi tasarlanmıştır. Ağ izleme yazılımlarıyla Router, Server, switch ve diğer önemli network cihazları veya uygulamalar gibi belirlenmiş hostlardan istatikler toplanır, Network trafiği detayı, CPU değerleri, disk kullanımı, Up-Down durumu gibi önemli verileri kontrol edilebilir. 
+Ağ cihazlarını keşfetme ve ip , mac gibi basit bilgileri edinmek için Nmap kullanılmıştır.Nmap ile alınan veriler düzenlenerek parametre olarak Fing’e gönderilir ve detaylı cihaz bilgileri mac adresleri sayesinde öğrenilir ve kategorize edilir.Python üzerinde flask ile yazılmış web servis aracılığıyla arayüzü yazmak için kullanılan React ‘a iletilir.Arayüz üzerinde seçilen cihaza ait daha detaylı bilgilere SNMP aracılığıyla ulaşılır.
 
  
 ## SUMMARY
-    This graduation work is made by G.T.U. The Computer Engineering department contains the content of the Undergraduate Completion Project to be prepared in the 4th grade, the reason and purpose of the project, the requirements of the project, the system architecture, the criteria of success, information about the hardware to be used, hardware functions and how to use the hardware.
+This graduation work is made by G.T.U. The Computer Engineering department contains the content of the Undergraduate Completion Project to be prepared in the 4th grade, the reason and purpose of the project, the requirements of the project, the system architecture, the criteria of success, information about the hardware to be used, hardware functions and how to use the hardware.
 In this project, a network imaging system is designed that allows the local network to be monitored, the devices found on the network to be identified, identified and categorized. With network monitoring software, statistics are collected from designated hosts such as Router, Server, switch and other important network devices or applications. Important data such as network traffic details, CPU values, disk usage, Up-Down status can be checked.
 Nmap is used to discover network devices and to obtain simple information such as ip and mac. The data received with Nmap is edited and sent to Fing as a parameter, and detailed device information is learned and categorized through mac addresses. Used to write the interface via flask written web service on Python. It is transmitted to React. More detailed information about the device selected on the interface is accessed via SNMP. 
 
@@ -62,122 +62,6 @@ Quick start options:
 - [Download from Creative Tim](https://www.creative-tim.com/product/material-dashboard-react).
 
 
-## Documentation
-The documentation for the Material Dashboard React is hosted at our [website](https://demos.creative-tim.com/material-dashboard-react/#/documentation/tutorial).
-
-
-## File Structure
-
-Within the download you'll find the following directories and files:
-
-```
-material-dashboard-react
-.
-├── CHANGELOG.md
-├── ISSUE_TEMPLATE.md
-├── LICENSE.md
-├── README.md
-├── bower.json
-├── gulpfile.js
-├── jsconfig.json
-├── package.json
-├── documentation
-│   ├── assets
-│   │   ├── css
-│   │   ├── img
-│   │   │   └── faces
-│   │   └── js
-│   └── tutorial-components.html
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-└── src
-    ├── index.js
-    ├── logo.svg
-    ├── routes.js
-    ├── assets
-    │   ├── css
-    │   │   └── material-dashboard-react.css
-    │   ├── github
-    │   │   ├── md-react.gif
-    │   │   └── react.svg
-    │   ├── img
-    │   │   └── faces
-    │   └── jss
-    │       ├── material-dashboard-react
-    │       │   ├── components
-    │       │   ├── layouts
-    │       │   └── views
-    │       └── material-dashboard-react.js
-    ├── components
-    │   ├── Card
-    │   │   ├── Card.js
-    │   │   ├── CardAvatar.js
-    │   │   ├── CardBody.js
-    │   │   ├── CardFooter.js
-    │   │   ├── CardHeader.js
-    │   │   └── CardIcon.js
-    │   ├── CustomButtons
-    │   │   └── Button.js
-    │   ├── CustomInput
-    │   │   └── CustomInput.js
-    │   ├── CustomTabs
-    │   │   └── CustomTabs.js
-    │   ├── FixedPlugin
-    │   │   └── FixedPlugin.js
-    │   ├── Footer
-    │   │   └── Footer.js
-    │   ├── Grid
-    │   │   ├── GridContainer.js
-    │   │   └── GridItem.js
-    │   ├── Navbars
-    │   │   ├── AdminNavbarLinks.js
-    │   │   ├── Navbar.js
-    │   │   └── RTLNavbarLinks.js
-    │   ├── Sidebar
-    │   │   └── Sidebar.js
-    │   ├── Snackbar
-    │   │   ├── Snackbar.js
-    │   │   └── SnackbarContent.js
-    │   ├── Table
-    │   │   └── Table.js
-    │   ├── Tasks
-    │   │   └── Tasks.js
-    │   └── Typography
-    │       ├── Danger.js
-    │       ├── Info.js
-    │       ├── Muted.js
-    │       ├── Primary.js
-    │       ├── Quote.js
-    │       ├── Success.js
-    │       └── Warning.js
-    ├── layouts
-    │   ├── Admin.js
-    │   └── RTL.js
-    ├── variables
-    │   ├── charts.js
-    │   └── general.js
-    └── views
-        ├── Dashboard
-        │   └── Dashboard.js
-        ├── Icons
-        │   └── Icons.js
-        ├── Maps
-        │   └── Maps.js
-        ├── Notifications
-        │   └── Notifications.js
-        ├── RTLPage
-        │   └── RTLPage.js
-        ├── TableList
-        │   └── TableList.js
-        ├── Typography
-        │   └── Typography.js
-        ├── UpgradeToPro
-        │   └── UpgradeToPro.js
-        └── UserProfile
-            └── UserProfile.js
-```
 
 ## Browser Support
 
