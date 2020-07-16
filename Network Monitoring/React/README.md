@@ -16,27 +16,20 @@ In this project, a network imaging system is designed that allows the local netw
 Nmap is used to discover network devices and to obtain simple information such as ip and mac. The data received with Nmap is edited and sent to Fing as a parameter, and detailed device information is learned and categorized through mac addresses. Used to write the interface via flask written web service on Python. It is transmitted to React. More detailed information about the device selected on the interface is accessed via SNMP. 
 
 
-## Table of Contents
+## Introduction
 
-* [Versions](#versions)
-* [Demo](#demo)
-* [Quick Start](#quick-start)
-* [Documentation](#documentation)
-* [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Technical Support or Questions](#technical-support-or-questions)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
+Günümüzde internet ve ağ kullanımı bir hayli yaygın hale gelmiştir. Bununla birlikte çoğu kurum işlerini bilişim sektörüne taşımış ve burada devam ettirmektedirler. Bunun sonucu olarak yerel ağın sürekli takip edilmesi ve ağda olup bitenin bilinme ihtiyacı doğmuştur. 
+Bu ihtiyaç doğrultusunda monitoring uygulamaları geliştirilmeye başlanmıştır. Ağ ve sistem tarafında kritik olarak görülen donanımın tamamının anlık kontrol edilebilmesi ve müdahale edilebilmesi durumuna monitoring denilmektedir. Büyük olarak lanse edilen kurumsal şirketlerde çok diyebileceğimiz sayıda network ve güvenlik teknolojileri bulunmaktadır. Bu teknolojik yapıların kaliteli ve uygun bir şekilde bakımının yapılması gereklidir. Bakımı ve kontrolü yapılmakta olan varlık ve bilgiler kritik seviyede olabilmektedir. Ayrıca yapılarda oluşacak hata durumlarında uyarı mekanizması bulunması ve sorumlu kişilere bilgilendirme mesajının iletilmesi gerekir. İletilen bu mesajların akabinde duruma ve oluşan olaya göre çok hızlı bir şekilde aksiyon alınması sağlanabilir.
+Bu nedenlerden dolayı arayüzü web tabanlı bir network monitoring uygulaması geliştirilmesi amaçlanmıştır.
 
 
-## Versions
 
-[<img src="src/assets/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard)
-[<img src="src/assets/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react)
-[<img src="src/assets/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard)
-[<img src="src/assets/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-angular2)
+## Screen shots
+
+[<img src="src/assets/github/dashboard.png" width="60" height="60" />]
+[<img src="src/assets/github/cpu.png" width="60" height="60" />]
+[<img src="src/assets/github/devices.png" width="60" height="60" />]
+[<img src="src/assets/github/process.png" width="60" height="60" />]
 
 
 | HTML | React | Vue | Angular |
