@@ -26,10 +26,10 @@ Bu nedenlerden dolayı arayüzü web tabanlı bir network monitoring uygulaması
 
 ## Screen shots
 
-[<img src="src/assets/github/dashboard.png" width="500" height="300" />]
-[<img src="src/assets/github/cpu.png" width="200" height="200" />]
-[<img src="src/assets/github/devices.png" width="200" height="200" />]
-[<img src="src/assets/github/process.png" width="200" height="200" />]
+![alt text](src/assets/github/dashboard.png)
+![alt text](src/assets/github/cpu.png)
+![alt text](src/assets/github/process.png)
+![alt text](src/assets/github/devices.png)
 
 
 
