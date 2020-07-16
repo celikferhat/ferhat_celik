@@ -27,14 +27,10 @@ Bu nedenlerden dolayı arayüzü web tabanlı bir network monitoring uygulaması
 ## Screen shots
 
 [<img src="src/assets/github/dashboard.png" width="60" height="60" />]
-[<img src="src/assets/github/cpu.png" width="60" height="60" />]
+<img src="src/assets/github/cpu.png" width="60" height="60" />
 [<img src="src/assets/github/devices.png" width="60" height="60" />]
 [<img src="src/assets/github/process.png" width="60" height="60" />]
 
-
-| HTML | React | Vue | Angular |
-| --- | --- | --- | --- |
-| [![Material Dashboard HTML](src/assets/github/opt_md_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard) | [![Material Dashboard React](src/assets/github/opt_mdr_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react) | [![Vue Material Dashboard ](src/assets/github/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard) | [![Material Dashboard Angular](src/assets/github/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-angular2)
 
 ## Demo
 
