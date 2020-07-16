@@ -1,7 +1,7 @@
 # RGB PIANO
 
 
-![Product Gif](/GUI.png)
+![Product Gif](/GUI.PNG)
 
 ## ÖZET 
 
