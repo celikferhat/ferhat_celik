@@ -2,7 +2,7 @@
 Şuan üzerinde çalıştığım bitirme konusu : Network Monitoring Tool
 
 Reset Bilisim (Son çalıştığım şirket)
-- Psikoloji kliğini için geliştirdiğim uygulamaya [buradan](https://github.com/celikferhat/ferhat_celik/tree/master/Reset%20Bilişim) ulaşabilirsiniz 
+- Psikoloji kliğini için geliştirdiğim uygulamaya [buradan](https://github.com/celikferhat/ferhat_celik/tree/master/Reset%20Bilisim) ulaşabilirsiniz 
 
 - Network Monitoring 
 [Go to Project ](https://github.com/celikferhat/ferhat_celik/tree/master/Network%20Monitoring)
