@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{0B6F2167-0E7D-460E-A7BB-A40307459477}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="SArticle/SArticle/Views/Page2.xaml.cs" Line="484" Column="7" />
+      <File FileName="SArticle/SArticle/Views/Speech.xaml.cs" Line="28" Column="1" />
+      <File FileName="SArticle/SArticle/Views/Speech.xaml" Line="18" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SArticle" expanded="True">
+            <Node name="SArticle.Android" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SArticle.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.227BFAD3-CB88-4E3C-B66E-24E615795C05" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.ItemProperties.SArticle.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

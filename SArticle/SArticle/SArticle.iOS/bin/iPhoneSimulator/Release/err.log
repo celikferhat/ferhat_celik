@@ -1,0 +1,13 @@
+MonoTouch: Could not install sigaction override, unexpected sigaction implementation.
+2020-12-23 17:27:56.149722+0300 SArticle.iOS[1432:37699] Could not register the assembly 'Xamarin.Essentials': System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
+  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <f262a20936e84e8199a5cf858110d394>:0 
+  at Registrar.DynamicRegistrar.CollectTypes (System.Reflection.Assembly assembly) [0x00000] in <22dc3d5f1cb14bcc87ceb9b610a70813>:0 
+  at Registrar.Registrar.RegisterAssembly (System.Reflection.Assembly assembly) [0x0004a] in <22dc3d5f1cb14bcc87ceb9b610a70813>:0
+2020-12-23 17:27:56.164932+0300 SArticle.iOS[1432:37699] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=1432
+2020-12-23 17:27:56.165159+0300 SArticle.iOS[1432:37699] SecTaskCopyDebugDescription: SArticle.iOS[1432]/0#-1 LF=0
+2020-12-23 17:27:56.175922+0300 SArticle.iOS[1432:37699] libMobileGestalt MobileGestalt.c:890: MGIsDeviceOneOfType is not supported on this platform.
+2020-12-23 17:28:03.679404+0300 SArticle.iOS[1432:37699] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=1432
+2020-12-23 17:28:03.679673+0300 SArticle.iOS[1432:37699] SecTaskCopyDebugDescription: SArticle.iOS[1432]/0#-1 LF=0
+2020-12-23 17:28:03.877327+0300 SArticle.iOS[1432:37699] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=1432
+2020-12-23 17:28:03.877586+0300 SArticle.iOS[1432:37699] SecTaskCopyDebugDescription: SArticle.iOS[1432]/0#-1 LF=0

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SArticle.MainPage" 
+             NavigationPage.HasNavigationBar="False" >
+
+    <StackLayout BackgroundColor="White" Padding="0">
+        <ActivityIndicator IsRunning="true" HorizontalOptions="Center" VerticalOptions= "CenterAndExpand"  Color="#002bff" />
+        <Label Text="Loading" TextColor="Black" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" />
+    </StackLayout>
+
+</ContentPage>

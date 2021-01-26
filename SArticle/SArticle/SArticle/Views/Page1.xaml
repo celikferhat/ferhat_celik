@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SArticle" xmlns:controls="clr-namespace:SArticle.Controls"
+             x:Class="SArticle.Views.Page1" NavigationPage.HasNavigationBar="False" >
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#2296f3" Padding="0" >
+            
+             <Image x:Name="iconpic" Source="logo.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+               
+            <Grid >
+                <Frame HasShadow="False" Grid.Row="0"  Grid.ColumnSpan="3" BackgroundColor="#1a7ac6" Padding="5,0,5,0"  Margin="10,5,0,5"  CornerRadius="25"  HorizontalOptions="FillAndExpand">
+                    <local:CustomEntry  x:Name="url_entry"    VerticalOptions="FillAndExpand" Keyboard="Url" Placeholder="  Enter url address" TextColor="White"  PlaceholderColor="White"   BackgroundColor="Transparent" />
+                </Frame>
+                
+                <ImageButton Clicked="go_mainpage" Source="right_arrow.png" HeightRequest="50" WidthRequest="50" Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="1" HorizontalOptions="CenterAndExpand"  BackgroundColor="Transparent" />
+                <Button x:Name="from_clipboard" Margin="10,0,0,0" Clicked="paste_clipboard"  Grid.ColumnSpan="3" Text="Paste from clipboard" TextColor="White" BorderColor="White" ImageSource="copy.png"  Grid.Row="1" HorizontalOptions="Start" CornerRadius="15" BackgroundColor="Transparent"  />
+                <Label Text="Clean View" TextColor="White" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Margin="15,0,0,0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Switch x:Name="clean_sw" OnColor="#00d671" ThumbColor="White" Grid.Row="2" HorizontalOptions="End" VerticalOptions="CenterAndExpand" Grid.Column="1" />
+                
+                <StackLayout  x:Name="google"  Grid.Row="3" Grid.ColumnSpan="4" Padding="15,0,15,0">                  
+                    <Label Text="Google"  FontSize="18" TextColor="White"  Margin="0,5,0,0"/>
+                    <Label Text="google.com"   FontSize="12" TextColor="GhostWhite"  />
+                    <BoxView  HorizontalOptions="Fill" BackgroundColor="#1769aa" HeightRequest="0.1"/>
+                </StackLayout>
+                
+                <StackLayout   x:Name="bing" Grid.Row="4" Grid.ColumnSpan="4" Padding="15,0,15,0">
+                    <Label Text="Bing" FontSize="18" TextColor="White"  Margin="0,5,0,0"/>
+                    <Label Text="bing.com" FontSize="12" TextColor="GhostWhite"  />
+                    <BoxView  HorizontalOptions="Fill" BackgroundColor="#1769aa" HeightRequest="0.1"/>
+                </StackLayout>
+               
+                <StackLayout   x:Name="yandex"  Grid.Row="5" Grid.ColumnSpan="4" Padding="15,0,15,0">
+                    <Label Text="Yandex"  FontSize="18" TextColor="GhostWhite"  Margin="0,5,0,0"/>
+                    <Label Text="yandex.com"  FontSize="12" TextColor="GhostWhite"  />
+                    <BoxView   HorizontalOptions="Fill" BackgroundColor="#1769aa" HeightRequest="0.1"/>
+                </StackLayout>
+                
+                
+                <Grid Grid.Row="8" Grid.ColumnSpan="4" Padding="15,0,15,0" VerticalOptions="End">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                    </Grid.RowDefinitions>
+                  
+                    <Label FontSize="15" Text="Bookmarks" Grid.ColumnSpan="2" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="2" Source="saved.png" Clicked="open_bookmarks" />
+                    <Label Grid.Column="3" />
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="4" Source="history.png" Clicked="open_history"/>
+                    <Label FontSize="15" Text="History" TextColor="White"  Grid.ColumnSpan="2" Grid.Column="5" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    
+                </Grid>
+
+            </Grid>
+
+            
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

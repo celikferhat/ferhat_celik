@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:sarticle="clr-namespace:SArticle" 
+             x:Class="SArticle.Views.Page2" NavigationPage.HasNavigationBar="false" >
+    <ContentPage.Content>
+        
+    <AbsoluteLayout BackgroundColor="White" Padding="0">
+        <ActivityIndicator IsRunning="true"  Color="#002bff" AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize"  AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Label Text="Loading" TextColor="Black" FontSize="20" AbsoluteLayout.LayoutBounds="0.5, 0.55, AutoSize, AutoSize"  AbsoluteLayout.LayoutFlags="PositionProportional"/>
+    </AbsoluteLayout>
+    
+        
+        
+    </ContentPage.Content>
+</ContentPage>

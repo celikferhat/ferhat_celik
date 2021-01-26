@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SArticle" xmlns:controls="clr-namespace:SArticle.Controls"
+             x:Class="SArticle.Views.FirstWeb" NavigationPage.HasNavigationBar="False" >
+    <ContentPage.Content>
+        
+       <Grid BackgroundColor="DodgerBlue" Padding="0" >
+           
+          <ImageButton Clicked="Handle_Clicked" BackgroundColor="Transparent" HeightRequest="25" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" WidthRequest="25" Margin="15" Source="cross.png" Grid.Row="0" Grid.Column="0"/>
+          <Label x:Name="title" LineBreakMode="WordWrap" Text="" VerticalOptions="CenterAndExpand" TextColor="White" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="5"/>
+          <WebView x:Name="fweb" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="12" />
+          
+          <ImageButton Clicked="back" Margin="0,10,0,10"  Source="back.png" BackgroundColor="Transparent"  Grid.Row="13" Grid.Column="0" />  
+          <Label  TextColor="White" FontSize="16" Margin="5" Text="Clean View" Grid.Row="13" Grid.Column="3" Grid.ColumnSpan = "2" VerticalOptions="CenterAndExpand" HorizontalOptions="End"/>
+          <ImageButton Clicked="clean_page" Source="clean.png" BackgroundColor="Transparent" Margin="5" Grid.Row="13" Grid.Column="5" />
+          
+       </Grid>
+           
+            
+          
+            
+        
+    </ContentPage.Content>
+    <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness">
+        <On Platform="iOS" Value="0,20,0,0" />
+    </OnPlatform>
+</ContentPage.Padding>
+</ContentPage>
