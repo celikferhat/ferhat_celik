@@ -1,7 +1,7 @@
 # ferhat_celik
 my repo
 
-Javafx Epidemic Simulation : [Click Me](https://github.com/celikferhat/ferhat_celik/tree/master/OOP/Final)  [Watch](https://www.youtube.com/watch?v=eoTLKz-cvxs)
+Javafx Epidemic Simulation : [Click Me](https://github.com/celikferhat/ferhat_celik/tree/master/OOP/Final)  /  [Watch](https://www.youtube.com/watch?v=eoTLKz-cvxs)
 
 Article Reader Cross Platform App : [Click Me](https://github.com/celikferhat/ferhat_celik/tree/master/SArticle)
 
