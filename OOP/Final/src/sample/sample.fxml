@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Integer?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<AnchorPane fx:id="mainpane" prefHeight="850.0" prefWidth="1400.0" style="-fx-background-color: #464646;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<children>
+      <Canvas fx:id="place" height="600.0" layoutX="200.0" width="1000.0" />
+   <Label layoutX="1239.0" layoutY="23.0" text="Number of Person" textFill="WHITE">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+   <Label layoutX="1239.0" layoutY="73.0" text="Healty : " textFill="#f2d43d">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="1239.0" layoutY="109.0" text="Sick : " textFill="#f2d43d">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label fx:id="healty_count" layoutX="1339.0" layoutY="73.0" text="0" textFill="WHITE">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label fx:id="sick_count" layoutX="1339.0" layoutY="109.0" text="0" textFill="WHITE">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+      <Button fx:id="resume" disable="true" layoutX="1220.0" layoutY="206.0" mnemonicParsing="false" prefHeight="25" prefWidth="75" text="RESUME" />
+      <Button fx:id="pause" disable="true" layoutX="1310.0" layoutY="206.0" mnemonicParsing="false" prefHeight="25" prefWidth="75" text="PAUSE" />
+      <Label layoutX="1234.0" layoutY="143.0" text=" Dead : " textFill="#f2d43d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dead_count" layoutX="1339.0" layoutY="143.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="312.0" text="Spreading Factor" textFill="WHITE" />
+      <Slider fx:id="sf_slider" blockIncrement="0.1" layoutX="15.0" layoutY="339.0" majorTickUnit="0.1" max="1.0" min="0.5" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="0.5" />
+      <Label fx:id="sf_value" layoutX="124.0" layoutY="312.0" text="0.5" textFill="#f2d43d" />
+      <Slider fx:id="df_slider" blockIncrement="0.1" layoutX="15.0" layoutY="406.0" majorTickUnit="0.1" max="0.9" min="0.1" minorTickCount="0" prefHeight="38.0" prefWidth="154.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="0.1" />
+      <Label layoutX="25.0" layoutY="377.0" text="Mortality Factor" textFill="WHITE" />
+      <Label fx:id="df_value" layoutX="132.0" layoutY="377.0" text="0.1" textFill="#f2d43d" />
+      <Label layoutX="1233.0" layoutY="566.0" text="Elapsed Time : " textFill="#f2d43d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="scnd" layoutX="1355.0" layoutY="566.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="23.0" text="Add Person" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="65.0" text="Mask" textFill="#f2d43d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="mask" layoutX="124.0" layoutY="67.0" mnemonicParsing="false" />
+   <ComboBox fx:id="speed" layoutX="119.0" layoutY="104.0" prefHeight="25.0" prefWidth="50.0">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <Integer fx:value="1" />
+            <Integer fx:value="2" />
+            <Integer fx:value="3" />
+            <Integer fx:value="4" />
+            <Integer fx:value="5" />
+         </FXCollections>
+      </items>
+      <value>
+         <Integer fx:value="1" />
+      </value>
+   </ComboBox>
+      <Label layoutX="20.0" layoutY="106.0" text="Speed" textFill="#f2d43d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="155.0" text="Social Distance" textFill="#f2d43d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   <ComboBox fx:id="social_distance" layoutX="119.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <Integer fx:value="1" />
+            <Integer fx:value="2" />
+            <Integer fx:value="3" />
+            <Integer fx:value="4" />
+            <Integer fx:value="5" />
+            <Integer fx:value="6" />
+            <Integer fx:value="7" />
+            <Integer fx:value="8" />
+            <Integer fx:value="9" />
+         </FXCollections>
+      </items>
+      <value>
+         <Integer fx:value="1" />
+      </value>
+   </ComboBox>
+      <Label layoutX="20.0" layoutY="210.0" text="Social Factor" textFill="#f2d43d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   <ComboBox fx:id="social_factor" layoutX="119.0" layoutY="206.0" prefHeight="25.0" prefWidth="50.0">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <Integer fx:value="1" />
+            <Integer fx:value="2" />
+            <Integer fx:value="3" />
+            <Integer fx:value="4" />
+            <Integer fx:value="5" />
+         </FXCollections>
+      </items>
+      <value>
+         <Integer fx:value="1" />
+      </value>
+   </ComboBox>
+      <Label layoutX="20.0" layoutY="270.0" text="Amount" textAlignment="JUSTIFY" textFill="#f2d43d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <fx:define>
+         <Integer fx:id="min" fx:value="1" />
+         <Integer fx:id="max" fx:value="100" />
+      </fx:define>
+      <!--  min="$min" max="$max"   -->
+      <Spinner fx:id="amount" layoutX="119.0" layoutY="268.0" prefHeight="25.0" prefWidth="60.0" min="$min" max="$max"  />
+      <Button fx:id="add_button" layoutX="61.0" layoutY="468.0" mnemonicParsing="false" text="ADD">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="start_button" layoutX="102.0" layoutY="536.0" mnemonicParsing="false" text="START">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="reset_button" disable="true" layoutX="16.0" layoutY="536.0" mnemonicParsing="false" text="RESET">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="1239.0" layoutY="175.0" text="Hospitalized :" textFill="#f2d43d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="hospitalized" layoutX="1339.0" layoutY="175.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pieChart" layoutX="15.0" layoutY="615.0" prefHeight="220.0" prefWidth="220.0" style="-fx-background-color: white" title="Socity" />
+      <PieChart fx:id="maske_oran" layoutX="245.0" layoutY="615.0" prefHeight="220.0" prefWidth="220.0" style="-fx-background-color: white;" title="Mask Wearing Rate" />
+
+</children>
+</AnchorPane>
