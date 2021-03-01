@@ -3,7 +3,7 @@ my repo
 
 (OOP Design Patterns Final Homework) Javafx Epidemic Simulation : [Click Me](https://github.com/celikferhat/ferhat_celik/tree/master/OOP/Final)  /  [Watch](https://www.youtube.com/watch?v=eoTLKz-cvxs)
 
-(Xamarin) Article Reader Cross Platform App : [Click Me](https://github.com/celikferhat/ferhat_celik/tree/master/SArticle) / [Watch] (https://youtu.be/E5nGoOKCCYw)
+(Xamarin) Article Reader Cross Platform App : [Click Me](https://github.com/celikferhat/ferhat_celik/tree/master/SArticle) / [Watch](https://youtu.be/E5nGoOKCCYw)
 
 (Php) Clinic App: [Click Me](http://simgepsikoloji.rf.gd/)
 
