@@ -1,7 +1,7 @@
 # Network Monitoring
 
 
-![Product Gif](src/assets/github/modem.png)
+![Product Gif](React/src/assets/github/modem.png)
 
 ## ÖZET 
 
