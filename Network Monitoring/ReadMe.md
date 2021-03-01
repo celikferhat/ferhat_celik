@@ -26,16 +26,16 @@ Bu nedenlerden dolayı arayüzü web tabanlı bir network monitoring uygulaması
 
 ## Screen shots
 
-![alt text](src/assets/github/dashboard.png)
-![alt text](src/assets/github/cpu.png)
-![alt text](src/assets/github/process.png)
-![alt text](src/assets/github/devices.png)
+![alt text](React/src/assets/github/dashboard.png)
+![alt text](React/src/assets/github/cpu.png)
+![alt text](React/src/assets/github/process.png)
+![alt text](React/src/assets/github/devices.png)
 
 
 ## project chart and flow chart
 
-![alt text](src/assets/github/Usage.png)
-![alt text](src/assets/github/usecase.png)
+![alt text](React/src/assets/github/Usage.png)
+![alt text](React/src/assets/github/usecase.png)
 
 
 
